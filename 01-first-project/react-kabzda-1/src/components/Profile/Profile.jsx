@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Profile.module.css'
+import MyPosts from './MyPosts/MyPosts'
 
 
 const Profile = () => {
@@ -12,20 +13,7 @@ const Profile = () => {
         <img src="https://www.pngkey.com/png/full/202-2024792_user-profile-icon-png-download-fa-user-circle.png"></img>
         ava + desc
       </div>
-      <div>
-        my posts
-        <div>
-          new pos
-        </div>
-        <div className={s.posts}>
-          <div className={s.item}>
-            post 1
-          </div>
-          <div className={s.item}>
-            post 2
-          </div>
-        </div>
-      </div>
+      <MyPosts />
     </div>
   )
 }
